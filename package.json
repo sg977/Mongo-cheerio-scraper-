@@ -1,27 +1,32 @@
 {
-  "name": "mongo-cheerio-scraper-",
+  "name": "mongo-cheerio",
   "version": "1.0.0",
-  "description": "Mongo.db, Mongoose, Cheerio",
-  "main": "index.js",
+  "description": "web app that scrapes news from other site ",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sg977/Mongo-cheerio-scraper-.git"
+    "url": "git+https://github.com/dln5057/Mongo-Cheerio.git"
   },
-  "author": "",
+  "keywords": [
+    "Mongo"
+  ],
+  "author": "Donald Nowels",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sg977/Mongo-cheerio-scraper-/issues"
+    "url": "https://github.com/dln5057/Mongo-Cheerio/issues"
   },
-  "homepage": "https://github.com/sg977/Mongo-cheerio-scraper-#readme",
+  "homepage": "https://github.com/dln5057/Mongo-Cheerio#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "cheerio": "^1.0.0-rc.2",
+    "cheerio": "^0.22.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^5.2.15",
+    "mongoose": "^4.13.17",
+    "morgan": "^1.9.1",
     "request": "^2.88.0"
   }
 }
