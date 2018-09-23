@@ -39,6 +39,7 @@ router.get('/scrape', function(req, res) {
             Article.count({ title: result.title}, function (err, test){
               if(test == 0){
                 var entry = new Article(result);
+                console.log(result); 
                 //save the artcle to the Mongo database
                 entry.save(function(err, doc) {
                   // log any errors
