@@ -33,9 +33,9 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_47bfwr61:in1v49re
 // // Connect to the Mongo DB
 mongoose.Promise = Promise;
 
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI, { useMongoClient: true });
 
-mongoose.connect("mongodb://localhost/scraper", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/scraper", { useNewUrlParser: true });
 
 
 //check mongoose for errors

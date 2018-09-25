@@ -23,8 +23,8 @@ router.get('/scrape', function(req, res) {
         //result object to store articles and links to articles
         var result = {};
           //grab the title and link from the scrapped html and store in result
-        result.title = $(this).children('.item-info-wrap').children('h1').text();
-        result.link = $(this).children('.item-info-wrap').children('h1').children('a').attr('href');
+        result.title = $(this).children('h2').text();
+        result.link = $(this).children('h2').children('a').attr('href');
    
         //checks that an empty articles arent pulled 
         if(result.title !=="" && result.link !== ""){
